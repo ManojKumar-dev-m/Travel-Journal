@@ -1,4 +1,4 @@
-import globe from "../assets/globe.png";
+import globe from "../assets/Globe.png";
 
 export default function Header() {
   return (

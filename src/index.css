@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+.container {
+  margin: 45px auto;
+  padding: 0 20px;
+  max-width: 1100px;
+}
+
+.header {
+  height: 55px;
+  background-color: #f55a5a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-img {
+  width: 30px;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+.header-span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: whitesmoke;
+  letter-spacing: 0.5px;
+}
+
+.journal-entry {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.marker {
+  width: 7px;
+  margin-right: 4px;
+}
+
+.main-img-container {
+  width: 125px;
+  aspect-ratio: 3 / 4;
+  /* height: 168px; */
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 19px;
+}
+
+.main-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.country {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: 12px;
+}
+
+.info-container a {
+  color: #2b283a;
+  font-size: 0.7rem;
+}
+
+.info-container a:visited {
+  color: #918e9b;
+}
+
+.info-container h2.entry-title {
+  margin-top: 7px;
+  margin-bottom: 17px;
+  font-size: 1.4rem;
+}
+
+.info-container p.trip-dates {
+  font-weight: bold;
+}
+
+.info-container p.entry-text {
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 17px;
+  }
+
+  .journal-entry {
+    margin-bottom: 48px;
+  }
+
+  .main-img-container {
+    width: 180px;
+    /* height: 240px; */
+  }
+
+  .info-container h2.entry-title {
+    font-size: 1.75rem;
+  }
+
+  .info-container p.entry-text {
+    font-size: 0.95rem;
+  }
+
+  .country,
+  .info-container a {
+    font-size: 0.8rem;
+  }
+}
